@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Login Vulnerable</title>
+    <title>SQL Statement</title>
 </head>
+
 <body>
-    <h2>Carregar usuaris</h2>
-    <a href="addUsers.php">Afegeix usuaris a la BBDD</a>
+    <h2><a href="createTableUser.php">Crear Taula users</a></h2>
+    <hr>
+    <h2><a href="addUsers.php">Afegeix usuaris a la BBDD</a></h2>
+    <hr>
     <h2>Login</h2>
     <form method="POST" action="login.php">
         <label>Username:</label><br>
@@ -18,9 +22,7 @@
     </form>
     <hr>
     <div>
-        <p>
-            <a href="">Mostra tots els usuaris</a>
-        </p>
+        <h2> <a href="showUsers.php">Mostra tots els usuaris</a> </h2>
     </div>
     <hr>
     <h2> Selecciona usuari per Id</h2>
@@ -31,16 +33,16 @@
         <button type="submit">Envia</button>
     </form>
     <hr>
-        <h2> Elimina usuari per Id</h2>
-    <form method="POST" action="DelById.php">
+    <h2> Elimina usuari per Id</h2>
+    <form method="POST" action="deleteById.php">
         <label>Id:</label><br>
         <input type="text" name="id_user"><br><br>
 
         <button type="submit">Envia</button>
     </form>
     <hr>
-        <h2> Actualitza usuari per Id</h2>
-    <form method="POST" action="UpdateById.php">
+    <h2> Actualitza usuari per Id</h2>
+    <form method="POST" action="showUserById.php">
         <label>Id:</label><br>
         <input type="text" name="id_user"><br><br>
 
@@ -51,4 +53,5 @@
 
 
 </body>
+
 </html>
