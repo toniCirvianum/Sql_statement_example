@@ -14,7 +14,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $result = executQyuery($sql,$params);
         $user = $result -> fetch();
 
-        print_r($user);
+                if ($result) {
+            echo "<pre>";
+            print_r($result->fetch());
+            echo "<ore>";
+        } else {
+            echo "<h3 style='color:red'>Usuari no existeix</h3>";
+        }
 
     }
 }
