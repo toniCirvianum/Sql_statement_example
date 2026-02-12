@@ -9,7 +9,8 @@ updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP);";
 
 $result =executQyuery($sql);
 
-if ($result) {
+
+if ($result==null) {
     echo "<h3 style='color:green'>Taula creada </h3>";
 } else {
     echo "<h3 style='color:red'>LA Taula ja existeix</h3>";

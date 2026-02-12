@@ -44,7 +44,7 @@ function executQyuery($sql, $params=null, $returnLastInsertId=false) {
     //Amb una sola funció getionem SELECt, INSERT, UPDATE i DELETE
     try {
         $connection = getConnection(); //conectem a la BBDD
-        $mySql = $connection->prepare($sql); //Preparem la sentencia sql
+        // $mySql = $connection->prepare($sql); //Preparem la sentencia sql
 
         if ($params!=null) {
             //si tenim parametres la sentencia s'executa amb aquests parametres

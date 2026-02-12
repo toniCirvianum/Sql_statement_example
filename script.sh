@@ -1,5 +1,4 @@
 #!/bin/bash
-
 docker-php-ext-install pdo_mysql zip
 
 # Habilitar mod_rewrite
